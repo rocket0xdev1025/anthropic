@@ -1,42 +1,41 @@
 /* ===== $ANT CONFIG: edit these at launch ===== */
 const CONFIG = {
-  CA: "TBA",     // token contract address, 0x + 40 hex
-  PAIR: "TBA",   // DexScreener pair address (optional; falls back to CA)
+  CA: "0x65cB02a938233B85b8232c10dB926BA3F8E95B95",     // token contract address, 0x + 40 hex
+  PAIR: "0x65cB02a938233B85b8232c10dB926BA3F8E95B95",   // DexScreener pair address (optional; falls back to CA)
   X: "https://x.com/anthropichood",
-  TG: "https://t.me/anthropichood",
 };
 /* ============================================= */
 (() => {
   "use strict";
   const ADDR = /^0x[a-fA-F0-9]{40}$/;
   const caLive = ADDR.test(CONFIG.CA);
-  const pairId = ADDR.test(CONFIG.PAIR) ? CONFIG.PAIR : (caLive ? CONFIG.CA : "TBA");
+  const pairId = ADDR.test(CONFIG.PAIR) ? CONFIG.PAIR : (caLive ? CONFIG.CA : "0x65cB02a938233B85b8232c10dB926BA3F8E95B95");
   const LINKS = {
-    buy: `https://app.uniswap.org/swap?chain=robinhood&outputCurrency=${caLive ? CONFIG.CA : "TBA"}`,
+    buy: `https://app.uniswap.org/swap?chain=robinhood&outputCurrency=${caLive ? CONFIG.CA : "0x65cB02a938233B85b8232c10dB926BA3F8E95B95"}`,
     chart: `https://dexscreener.com/robinhood/${pairId}`,
     embed: `https://dexscreener.com/robinhood/${pairId}?embed=1&theme=dark&trades=0&info=0`,
     x: CONFIG.X, tg: CONFIG.TG,
   };
   document.querySelectorAll("[data-link]").forEach(a => { const u = LINKS[a.dataset.link]; if (u) a.href = u; });
-  document.querySelectorAll("[data-ca]").forEach(el => { el.textContent = caLive ? CONFIG.CA : "TBA"; el.title = caLive ? CONFIG.CA : "Contract address coming at launch"; });
+  document.querySelectorAll("[data-ca]").forEach(el => { el.textContent = caLive ? CONFIG.CA : "0x65cB02a938233B85b8232c10dB926BA3F8E95B95"; el.title = caLive ? CONFIG.CA : "Contract address coming at launch"; });
 
   // chart embed: only load + reveal once a real CA/pair exists
   const frame = document.getElementById("dexEmbed"), overlay = document.getElementById("chartOverlay");
-  if (frame && pairId !== "TBA") { frame.src = LINKS.embed; overlay && overlay.classList.add("hidden"); }
+  if (frame && pairId !== "0x65cB02a938233B85b8232c10dB926BA3F8E95B95") { frame.src = LINKS.embed; overlay && overlay.classList.add("hidden"); }
 
   // toast + copy
   const toast = document.getElementById("toast"); let tt;
   const say = m => { toast.textContent = m; toast.classList.add("show"); clearTimeout(tt); tt = setTimeout(() => toast.classList.remove("show"), 2200); };
   const fallbackCopy = t => { const ta = document.createElement("textarea"); ta.value = t; ta.setAttribute("readonly", ""); ta.style.cssText = "position:fixed;opacity:0;left:-9999px"; document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand("copy"); } catch (e) {} ta.remove(); return ok; };
   document.querySelectorAll(".copy-ca").forEach(btn => btn.addEventListener("click", async () => {
-    const text = caLive ? CONFIG.CA : "TBA";
+    const text = caLive ? CONFIG.CA : "0x65cB02a938233B85b8232c10dB926BA3F8E95B95";
     let ok = false;
     try { if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); ok = true; } } catch (e) {}
     if (!ok) ok = fallbackCopy(text);
     const lbl = btn.querySelector(".lbl"), old = lbl ? lbl.textContent : "";
     btn.classList.add("copied"); if (lbl) lbl.textContent = "Copied";
     setTimeout(() => { btn.classList.remove("copied"); if (lbl) lbl.textContent = old; }, 1600);
-    say(!caLive ? "CA is TBA: launching soon. Hold the line." : ok ? "Contract address copied. Colony +1" : "Copy failed: select the address manually");
+    say(!caLive ? "CA is 0x65cB02a938233B85b8232c10dB926BA3F8E95B95: launching soon. Hold the line." : ok ? "Contract address copied. Colony +1" : "Copy failed: select the address manually");
   }));
 
   // nav highlight via IntersectionObserver
