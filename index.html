@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Anthropic ($ANT) | Small but mighty on Robinhood Chain</title>
+<meta name="description" content="$ANT — the colony meme token on Robinhood Chain. Small but mighty. Hold the line.">
+<meta property="og:title" content="Anthropic ($ANT)">
+<meta property="og:description" content="Small but mighty. The colony meme token on Robinhood Chain.">
+<meta property="og:image" content="assets/banner.png">
+<meta name="theme-color" content="#1a0f0a">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preload" as="image" href="assets/ant-masked.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<div class="grain" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-ant" viewBox="0 0 64 32"><g fill="currentColor"><ellipse cx="12" cy="17" rx="7" ry="6"/><ellipse cx="27" cy="17" rx="6" ry="5"/><circle cx="41" cy="16" r="6"/></g><g stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"><path d="M45 11l6-7M44 12l9-3"/><path d="M24 21l-5 8M28 21l1 8M31 20l6 8M24 13l-5-8M28 13l1-8M31 14l6-8"/></g></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/></g></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4L3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></g></symbol>
+    <!-- Telegram: swap this inline icon for <img src="assets/tg.png"> when provided -->
+    <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.5 3.6L2.9 10.8c-1.1.4-1 1.9.1 2.2l4.6 1.4 1.8 5.6c.3.9 1.4 1.1 2 .5l2.6-2.4 4.6 3.4c.7.5 1.7.1 1.9-.8l3-15.1c.2-1.1-.9-2-1.9-1.6zM9.6 14.3l-.5 3.7-1.1-3.9 9.7-6.6-8.1 6.8z"/></symbol>
+    <!-- X: swap this inline icon for <img src="assets/x.png"> when provided -->
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h4.6l4.1 5.8L17.6 3H20l-6.2 7.3L21 21h-4.6l-4.5-6.3L6.6 21H4.2l6.6-7.7z"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H5a2 2 0 0 1 0-4h13v4"/><path d="M3 5v14a2 2 0 0 0 2 2h15V7"/><circle cx="16" cy="14" r="1.5" fill="currentColor"/></g></symbol>
+    <symbol id="i-eth" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2l7 10-7 4-7-4z"/><path d="M5 13.5l7 8.5 7-8.5-7 4z"/></g></symbol>
+    <symbol id="i-bridge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 16h20M4 16V9M20 16V9M2 9c4 0 6-4 10-4s6 4 10 4M8 16v-4M12 16v-5M16 16v-4"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M9 12l2 2 4-4" stroke-linecap="round"/></g></symbol>
+    <symbol id="i-crumb" viewBox="0 0 24 24"><path fill="currentColor" d="M6 9l5-4 6 2 3 6-3 5-7 1-5-4z"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 18h18l-1-11-5 5-3-7-3 7-5-5z"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav glass" id="nav">
+  <a href="#top" class="brand" aria-label="Anthropic $ANT home">
+    <picture><source srcset="assets/logo-thumb.webp" type="image/webp"><img src="assets/logo-thumb.png" width="40" height="40" alt="$ANT logo: orange ant wearing a beige cap"></picture>
+    <span>$ANT</span>
+  </a>
+  <nav class="links" aria-label="Sections">
+    <a href="#colony">Colony</a><a href="#strength">Strength</a><a href="#report">Report</a><a href="#how">How to Buy</a><a href="#chart">Chart</a><a href="#faq">FAQ</a>
+  </nav>
+  <div class="nav-cta">
+    <button class="btn btn-ghost btn-sm copy-ca" type="button" aria-label="Copy contract address"><svg><use href="#i-copy"/></svg><span class="lbl">Copy CA</span></button>
+    <a class="icon-btn" data-link="x" href="https://x.com/anthropichood" target="_blank" rel="noopener" aria-label="$ANT on X"><svg><use href="#i-x"/></svg></a>
+    <a class="icon-btn" data-link="tg" href="https://t.me/anthropichood" target="_blank" rel="noopener" aria-label="$ANT on Telegram"><svg><use href="#i-tg"/></svg></a>
+    <a class="btn btn-primary btn-sm hide-sm" data-link="buy" href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener">Buy Now</a>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO: surface of the anthill -->
+<section class="hero" id="top">
+  <div class="hero-sky" data-depth="0.1" aria-hidden="true"></div>
+  <div class="hero-word" aria-hidden="true">$ANT</div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="kicker"><span class="dot"></span>Live on Robinhood Chain</p>
+      <h1 class="masthead" aria-label="Anthropic">Anthropic</h1>
+      <p class="hero-sub split-words">Small but mighty. One ant lifts fifty times its weight. A colony lifts the chart.</p>
+      <div class="hero-btns">
+        <a class="btn btn-primary btn-lg" data-link="buy" href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener"><svg><use href="#i-swap"/></svg>Buy Now</a>
+        <a class="btn btn-dark btn-lg" data-link="chart" href="https://dexscreener.com/robinhood/TBA" target="_blank" rel="noopener"><svg><use href="#i-chart"/></svg>Chart</a>
+      </div>
+      <div class="ca-box glass" role="group" aria-label="Contract address">
+        <span class="ca-tag">CA</span>
+        <code class="ca-value" data-ca>TBA</code>
+        <button class="copy-ca ca-btn" type="button" aria-label="Copy contract address"><svg><use href="#i-copy"/></svg><span class="lbl">Copy</span></button>
+      </div>
+      <p class="scam"><svg><use href="#i-shield"/></svg>Only trust the CA posted here and in our official TG / X. Nobody from the colony will DM you first.</p>
+    </div>
+    <div class="hero-art">
+      <div class="halo" aria-hidden="true"></div>
+      <picture class="hero-ant" data-depth="0.35">
+        <source srcset="assets/ant-masked.webp" type="image/webp">
+        <img src="assets/ant-masked.png" width="720" height="500" alt="The $ANT mascot: a realistic orange-red ant wearing a beige cap with a stylized A mark" fetchpriority="high">
+      </picture>
+      <span class="chip c1" data-depth="0.6">SMALL BUT MIGHTY</span>
+      <span class="chip c2" data-depth="0.8">COLONY +1</span>
+      <span class="chip c3" data-depth="0.5">HOLD THE LINE</span>
+    </div>
+  </div>
+  <div class="strata" aria-hidden="true">
+    <svg class="s1" data-depth="0.2" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60 C200 20 380 90 620 50 S1100 10 1440 60 V120 H0z"/></svg>
+    <svg class="s2" data-depth="0.4" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 70 C260 110 480 30 760 70 S1200 100 1440 50 V120 H0z"/></svg>
+    <svg class="s3" data-depth="0.6" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 80 C300 50 500 110 820 80 S1250 60 1440 90 V120 H0z"/></svg>
+    <div class="marchers top"><svg><use href="#i-ant"/></svg><svg><use href="#i-ant"/></svg><svg><use href="#i-ant"/></svg><svg><use href="#i-ant"/></svg><svg><use href="#i-ant"/></svg></div>
+  </div>
+</section>
+
+<div class="ribbons" aria-hidden="true">
+  <div class="ribbon r1"><div class="track">HOLD THE LINE <i></i> COLONY STRONG <i></i> SMALL BUT MIGHTY <i></i> WORK TOGETHER <i></i> $ANT <i></i> HOLD THE LINE <i></i> COLONY STRONG <i></i> SMALL BUT MIGHTY <i></i> WORK TOGETHER <i></i> $ANT <i></i></div></div>
+  <div class="ribbon r2"><div class="track">ROBINHOOD CHAIN <i></i> ONE COLONY <i></i> NO ANT LEFT BEHIND <i></i> DIG DEEPER <i></i> ROBINHOOD CHAIN <i></i> ONE COLONY <i></i> NO ANT LEFT BEHIND <i></i> DIG DEEPER <i></i></div></div>
+</div>
+
+<div class="underground">
+  <svg class="tunnel" id="tunnel" aria-hidden="true"><path class="tunnel-bed"/><path class="tunnel-line"/></svg>
+
+  <section class="chamber" id="colony">
+    <div class="wrap grid-2">
+      <div>
+        <p class="depth">Chamber 01 &middot; Depth 12cm</p>
+        <h2 class="split-words">Welcome to the colony.</h2>
+        <p class="lead reveal">$ANT is a meme token built on one simple truth: nothing is stronger than a colony that works together. No whales pretending to be kings. Just millions of tiny workers, carrying crumbs, holding the line.</p>
+        <ul class="ticks">
+          <li class="reveal"><svg><use href="#i-check"/></svg>Built on Robinhood Chain, an Ethereum L2</li>
+          <li class="reveal"><svg><use href="#i-check"/></svg>Community first, pure meme energy</li>
+          <li class="reveal"><svg><use href="#i-check"/></svg>Small but mighty since day one</li>
+        </ul>
+      </div>
+      <figure class="logo-frame reveal">
+        <picture><source srcset="assets/logo.webp" type="image/webp"><img src="assets/logo.png" width="400" height="400" loading="lazy" alt="$ANT logo portrait: orange ant with an A-marked beige cap"></picture>
+        <figcaption>Worker #0001 &middot; reporting for duty</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="banner-sec" aria-label="Colony banner">
+    <div class="banner-clip" id="bannerClip">
+      <picture><source srcset="assets/banner.webp" type="image/webp"><img id="bannerImg" src="assets/banner.png" width="1500" height="500" loading="lazy" alt="Wide banner of the $ANT mascot ant in its beige cap"></picture>
+      <p class="banner-tag">ONE ANT. ONE COLONY. ONE CHAIN.</p>
+    </div>
+  </section>
+
+  <section class="chamber strength" id="strength">
+    <div class="wrap strength-grid">
+      <div>
+        <p class="depth">Chamber 02 &middot; The Crumb Run</p>
+        <h2 class="split-words">Every crumb counts.</h2>
+        <p class="lead">Scroll down and watch the workers haul crumbs up the tunnel. Every holder is one more ant on the line. Enough ants and the gauge hits the top.</p>
+        <div class="gauge glass" role="img" aria-label="Colony strength gauge filling to colony strong">
+          <div class="gauge-head"><span>COLONY STRENGTH</span><b id="gaugePct">0%</b></div>
+          <div class="gauge-bar"><span id="gaugeFill"></span></div>
+          <p class="gauge-state" id="gaugeState">DIGGING...</p>
+        </div>
+      </div>
+      <div class="run">
+        <svg viewBox="0 0 300 420" class="run-svg" aria-hidden="true">
+          <path id="runPath" d="M150 410 C40 360 260 300 150 240 S40 120 150 70 S200 20 150 10" class="run-tunnel"/>
+          <path d="M150 410 C40 360 260 300 150 240 S40 120 150 70 S200 20 150 10" class="run-dash"/>
+          <ellipse cx="150" cy="12" rx="60" ry="10" class="run-mound"/>
+          <g id="runners"></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="chamber" id="report">
+    <div class="wrap">
+      <p class="depth">Chamber 03 &middot; Colony Report</p>
+      <h2 class="split-words">The colony report.</h2>
+      <div class="stats">
+        <article class="stat glass reveal"><span class="k">Ticker</span><b>$ANT</b><p>One symbol, one colony.</p></article>
+        <article class="stat glass reveal"><span class="k">Chain</span><b>Robinhood</b><p>Ethereum L2, paid in ETH.</p></article>
+        <article class="stat glass reveal"><span class="k">Lift ratio</span><b><span class="count" data-to="50">50</span>x</b><p>An ant lifts 50x its weight.</p></article>
+        <article class="stat glass reveal"><span class="k">Ants left behind</span><b><span class="count" data-to="0">0</span></b><p>Work together. Hold together.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="chamber" id="how">
+    <div class="wrap">
+      <p class="depth">Chamber 04 &middot; The Nursery</p>
+      <h2 class="split-words">How to buy $ANT.</h2>
+      <ol class="steps">
+        <li class="step glass reveal"><span class="n">01</span><svg class="si"><use href="#i-wallet"/></svg><h3>Get a wallet</h3><p>Install MetaMask or Rabby, then add the Robinhood Chain network to it.</p></li>
+        <li class="step glass reveal"><span class="n">02</span><svg class="si"><use href="#i-bridge"/></svg><h3>Get ETH on Robinhood Chain</h3><p>Bridge ETH over from Ethereum or another chain, or buy ETH and send it to your wallet on Robinhood Chain.</p></li>
+        <li class="step glass reveal"><span class="n">03</span><svg class="si"><use href="#i-swap"/></svg><h3>Open Uniswap</h3><p>Go to Uniswap, connect your wallet and select Robinhood Chain as the network.</p></li>
+        <li class="step glass reveal"><span class="n">04</span><svg class="si"><use href="#i-ant"/></svg><h3>Paste the CA and swap</h3><p>Paste the $ANT contract address, choose your ETH amount and swap. Welcome to the colony.</p></li>
+      </ol>
+      <div class="how-cta reveal">
+        <a class="btn btn-primary btn-lg" data-link="buy" href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener"><svg><use href="#i-swap"/></svg>Buy $ANT on Uniswap</a>
+        <div class="ca-box glass" role="group" aria-label="Contract address"><span class="ca-tag">CA</span><code class="ca-value" data-ca>TBA</code><button class="copy-ca ca-btn" type="button" aria-label="Copy contract address"><svg><use href="#i-copy"/></svg><span class="lbl">Copy</span></button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chamber" id="chart">
+    <div class="wrap">
+      <p class="depth">Chamber 05 &middot; The Lookout</p>
+      <h2 class="split-words">Watch the hill grow.</h2>
+      <div class="chart-frame glass reveal">
+        <div class="chart-bar"><span><i></i><i></i><i></i></span><b>$ANT / ETH &middot; Robinhood Chain</b><a data-link="chart" href="https://dexscreener.com/robinhood/TBA" target="_blank" rel="noopener">Open DexScreener</a></div>
+        <div class="chart-body">
+          <iframe id="dexEmbed" title="$ANT price chart on DexScreener" loading="lazy" data-src="https://dexscreener.com/robinhood/TBA?embed=1&theme=dark&trades=0&info=0"></iframe>
+          <div class="chart-overlay" id="chartOverlay">
+            <svg><use href="#i-chart"/></svg>
+            <h3>Chart goes live at launch</h3>
+            <p>The workers are still digging. The contract address drops soon. Hold the line.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chamber" id="faq">
+    <div class="wrap narrow">
+      <p class="depth">Chamber 06 &middot; The Royal Chamber</p>
+      <h2 class="split-words"><svg class="crown"><use href="#i-crown"/></svg> Questions from the Queen.</h2>
+      <div class="faq">
+        <details class="glass reveal"><summary>What is $ANT?</summary><p>A community meme token on Robinhood Chain celebrating the humble ant: small but mighty, and unstoppable together.</p></details>
+        <details class="glass reveal"><summary>Which chain is it on?</summary><p>Robinhood Chain, an Ethereum-based L2. You pay gas and swap with ETH.</p></details>
+        <details class="glass reveal"><summary>Where is the contract address?</summary><p>It shows as TBA until launch. When live, it appears in every CA box on this page. Always verify against our official X and Telegram.</p></details>
+        <details class="glass reveal"><summary>Is this affiliated with any company?</summary><p>No. $ANT is a community meme token with no affiliation with Anthropic PBC or any company.</p></details>
+        <details class="glass reveal"><summary>How do I join the colony?</summary><p>Follow us on X, join the Telegram, buy some $ANT and hold the line.</p></details>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="surface-cta">
+  <div class="marchers"><svg><use href="#i-ant"/></svg><svg><use href="#i-ant"/></svg><svg><use href="#i-ant"/></svg><svg><use href="#i-ant"/></svg><svg><use href="#i-ant"/></svg><svg><use href="#i-ant"/></svg></div>
+  <h2 class="split-words">Colony strong. Join the line.</h2>
+  <div class="hero-btns center">
+    <a class="btn btn-primary btn-lg" data-link="buy" href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener">Buy Now</a>
+    <a class="btn btn-dark btn-lg" data-link="tg" href="https://t.me/anthropichood" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>Telegram</a>
+    <a class="btn btn-dark btn-lg" data-link="x" href="https://x.com/anthropichood" target="_blank" rel="noopener"><svg><use href="#i-x"/></svg>Follow on X</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-brand"><picture><source srcset="assets/logo-thumb.webp" type="image/webp"><img src="assets/logo-thumb.png" width="48" height="48" alt="$ANT logo" loading="lazy"></picture><b>Anthropic ($ANT)</b></div>
+    <p class="disc">$ANT is a community meme token with no affiliation with Anthropic PBC or any company. It has no intrinsic value or expectation of financial return. Nothing on this site is financial advice. Crypto is risky; only use what you can afford to lose. Always verify the contract address.</p>
+    <p class="copy">&copy; 2026 The $ANT colony. Small but mighty.</p>
+  </div>
+</footer>
+
+<div class="mobile-bar glass" aria-label="Quick actions">
+  <a class="btn btn-primary" data-link="buy" href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=TBA" target="_blank" rel="noopener">Buy Now</a>
+  <a class="btn btn-dark" data-link="chart" href="https://dexscreener.com/robinhood/TBA" target="_blank" rel="noopener">Chart</a>
+  <button class="btn btn-ghost copy-ca" type="button" aria-label="Copy contract address"><svg><use href="#i-copy"/></svg><span class="lbl">CA</span></button>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
